@@ -1,0 +1,25 @@
+.Login {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background: rgb(2, 24, 62);
+}
+
+.login-wrap {
+    width: 350px;
+    height: 300px;
+    margin-top: 200px;
+}
+
+.login-wrap .login-form {
+    max-width: 300px;
+}
+
+.login-wrap .login-form-forgot {
+    float: right;
+}
+
+.login-wrap .login-form-button {
+    width: 100%;
+}
