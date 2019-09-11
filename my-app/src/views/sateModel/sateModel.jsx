@@ -42,7 +42,7 @@ class SateModel extends Component {
         await http.post('/api/SatelliteModel/Query',{PageIndex: 1, PageSize: 10, Item:{data:''}}).then(res => {
             if(res.data.Status === 200) {
                 res.data.Data.ItemList.map(item => {
-                    item.key = item.ID
+                    return item.key = item.ID
                 })
                 this.setState({
                     dataSource: res.data.Data.ItemList

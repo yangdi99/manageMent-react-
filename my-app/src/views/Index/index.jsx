@@ -7,7 +7,7 @@ const { SubMenu } = Menu;
 const { Header, Content, Sider } = Layout;
 class Index extends Component{
     componentDidMount(){
-        console.log(this.props)
+        // console.log(this.props)
     }
     render(){
         const { routes } = this.props;

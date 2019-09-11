@@ -8,7 +8,7 @@ class Login extends Component{
         e.preventDefault();
         this.props.form.validateFields((err, values) => {
             if(!err){
-                console.log('Received values of form: ', values);
+                // console.log('Received values of form: ', values);
                 this.toLogin(values);
             }
         })
@@ -56,14 +56,14 @@ class Login extends Component{
                             {getFieldDecorator('remember', {
                                 valuePropName: 'checked',
                                 initialValue: true,
-                            })(<Checkbox>Remember me</Checkbox>)}
-                            <a className="login-form-forgot" href="">
+                            })(<Checkbox style={{color:'#1890ff'}}>Remember me</Checkbox>)}
+                            <a className="login-form-forgot" href=" ">
                                 Forgot password
                             </a>
                         <Button type="primary" htmlType="submit" className="login-form-button" onClick={this.toLogin.bind(this)}>
                             Login
                         </Button>
-                            Or <a href="">register now!</a>
+                            Or <a href=" ">register now!</a>
                         </Form.Item>
                     </Form>
                 </div>

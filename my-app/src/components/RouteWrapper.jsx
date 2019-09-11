@@ -8,7 +8,6 @@ class RouterWrapper extends Component{
             <Switch>
                 {
                     routes.map((item, index) => {
-                        console.log(item,"4545")
                         return <Route exact={item.exact} path={item.path} key={index} render = {(location) => {
                             return  item.authorization && token
                             ? <Redirect to={{pathname:'/Login',state:{from:item.path}}}></Redirect>
